@@ -1,8 +1,7 @@
-import '../global.css'
 
 export default function Login() {
     return (
-        <body>
+        <>
             <section>
                 <div className='flex flex-col justify-center items-center h-full'>
                     <div className='bg-white rounded-lg shadow-lg w-96 h-96 flex flex-col justify-center items-center'>
@@ -15,6 +14,6 @@ export default function Login() {
                     </div>
                 </div>
             </section>
-        </body>
+        </>
     )
 }
