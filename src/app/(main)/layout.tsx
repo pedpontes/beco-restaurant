@@ -44,9 +44,9 @@ export default function RootLayout({
   
   return (
     <html lang='en'>
-      <body style={{color: "#d5d2bf"}} className=' h-screen w-screen'>
+      <body className='text-white h-screen w-screen'>
         <section className='flex flex-row h-full w-full'>
-          <div style={{background: "#bd8f49"}} className=' text-2xl h-full flex flex-col justify-between fonte-semibold w-max shadow-2xl'>
+          <div className='bg-zinc-700 text-2xl h-full flex flex-col justify-between fonte-semibold w-max shadow-2xl'>
             <ul className='p-8 w-full'>
               {navBar.map((item: Nav, index: number) => {
                 return (
@@ -68,7 +68,7 @@ export default function RootLayout({
               
             </ul>
           </div>
-          <div className=' bg-zinc-200 overflow-auto p-8 h-full w-full flex-1 text-black'>{children}</div>
+          <div className=' bg-zinc-300 overflow-auto p-8 h-full w-full flex-1 text-black'>{children}</div>
         </section>
       </body>
     </html>

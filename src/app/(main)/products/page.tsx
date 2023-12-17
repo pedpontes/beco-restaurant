@@ -1,5 +1,7 @@
+import PageStruct from '@app/components/PageStruct';
 import ProductContext from '../../components/product/context/ProductContext'
 import { Product } from '@app/lib/definitions';
+import Title from '@app/components/Title';
 
 const List: Product[] = [
   {
@@ -89,12 +91,12 @@ export default async function Page() {
 
   return (
     <>
-      <div className='flex-col justify-center'>
-        <div className='ml-5'>
-          <h1 className='text-5xl'>Produtos</h1>
-        </div>
+      <PageStruct>
+        <Title>
+          Produtos
+        </Title>
         <ProductContext products={List}/>
-      </div>
+      </PageStruct>
     </>
   )
 }

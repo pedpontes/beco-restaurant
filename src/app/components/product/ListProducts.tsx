@@ -1,4 +1,3 @@
-
 import { Product } from "@app/lib/definitions";
 import ListItems from "./ProductContainer";
 import { FilterContext } from "./context/ProductContext";
